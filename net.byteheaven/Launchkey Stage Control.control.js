@@ -280,6 +280,7 @@ function init()
    
    // Pads: note on/off on channel 10 when InControl is off.
    host.getMidiInPort(0).createNoteInput( "Pads", "89????", "99????" ) // "D?????", "E?????" );
+   host.getMidiInPort(0).createNoteInput("Keys", "80????", "90????", "B001??", "D0????", "E0????");
 
    host.getMidiInPort(0).setMidiCallback( onMidi0 );
    host.getMidiInPort(1).setMidiCallback( onMidi1 );
